@@ -16,6 +16,11 @@ export default function SignUpForm({ onSwitchToSignIn }: { onSwitchToSignIn: () 
   });
   const { isPending } = authClient.useSession();
 
+  const onClickEntraSignIn = async () => {
+    const result = await authClient.signIn.social({ provider: "microsoft" });
+    console.log(result);
+  }
+
   const form = useForm({
     defaultValues: {
       email: "",
@@ -153,6 +158,16 @@ export default function SignUpForm({ onSwitchToSignIn }: { onSwitchToSignIn: () 
           className="text-indigo-600 hover:text-indigo-800"
         >
           Already have an account? Sign In
+        </Button>
+      </div>
+    
+      <div className="mt-4 text-center">
+        <Button
+          variant="link"
+          onClick={onClickEntraSignIn}
+          className="w-full"
+        >
+          Sign In With Entra
         </Button>
       </div>
     </div>
