@@ -1,5 +1,5 @@
 import { env } from "@better-auth-elysia-obo-2/env/server";
-import { drizzle } from "drizzle-orm/bun-sqlite";
+import { drizzle } from "drizzle-orm/bun-sql";
 
 import * as schema from "./schema";
 

@@ -10,23 +10,29 @@
     }
   },
   "scripts": {
-    "db:local": "turso dev --db-file local.db",
-    "db:push": "drizzle-kit push",
-    "db:generate": "drizzle-kit generate",
-    "db:studio": "drizzle-kit studio",
-    "db:migrate": "drizzle-kit migrate"
+   "db:push": "drizzle-kit push",
+		"db:generate": "drizzle-kit generate",
+		"db:studio": "drizzle-kit studio",
+		"db:migrate": "drizzle-kit migrate",
+		"db:start": "docker compose up -d",
+		"db:watch": "docker compose up",
+		"db:stop": "docker compose stop",
+		"db:down": "docker compose down"
   },
   "dependencies": {
-    "@better-auth-elysia-obo-2/env": "workspace:*",
-    "@libsql/client": "catalog:",
-    "dotenv": "catalog:",
-    "drizzle-orm": "^0.45.1",
-    "libsql": "catalog:",
-    "zod": "catalog:"
+    "@better-auth-elysia-obo-2/schemas": "workspace:*",
+		"@better-auth-elysia-obo-2/types": "workspace:*",
+		"@better-auth-elysia-obo-2/env": "workspace:*",
+		"dotenv": "catalog:",
+		"drizzle-orm": "^0.45.1",
+		"drizzle-zod": "^0.8.3",
+		"pg": "^8.17.1",
+		"zod": "catalog:"
   },
   "devDependencies": {
     "@better-auth-elysia-obo-2/config": "workspace:*",
-    "drizzle-kit": "^0.31.8",
-    "typescript": "^5"
+    "@types/pg": "^8.16.0",
+		"drizzle-kit": "^0.31.8",
+		"typescript": "catalog:"
   }
 }
