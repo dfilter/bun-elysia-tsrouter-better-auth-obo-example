@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-lyra",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@better-auth-elysia-obo-2/ui/components",
+    "utils": "@better-auth-elysia-obo-2/ui/lib/utils",
+    "hooks": "@better-auth-elysia-obo-2/ui/hooks",
+    "lib": "@better-auth-elysia-obo-2/ui/lib",
+    "ui": "@better-auth-elysia-obo-2/ui/components"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "registries": {}
+}

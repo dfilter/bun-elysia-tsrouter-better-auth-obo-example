@@ -1,0 +1,3 @@
+{
+  "extends": "@better-auth-elysia-obo-2/config/tsconfig.base.json"
+}
